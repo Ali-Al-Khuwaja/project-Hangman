@@ -1,0 +1,15 @@
+--- !ruby/object:Hangman
+random_word:
+- t
+- a
+- l
+- e
+- s
+current_word_state:
+- "-"
+- "-"
+- "-"
+- "-"
+- "-"
+incorrect_guesses: []
+remaining_lives: 5
