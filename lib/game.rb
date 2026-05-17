@@ -6,7 +6,7 @@ require 'yaml'
 class Hangman
   def initialize
     file = File.read('assets/google-10000-english-no-swears.txt')
-    viable_words = file.split.filter { |word| word.length.between?(4, 6) }
+    viable_words = file.split.filter { |word| word.length.between?(4, 6) } # Better than 12 :)
 
     @random_word = viable_words.sample.split('')
     @current_word_state = Array.new(@random_word.length, '-')
